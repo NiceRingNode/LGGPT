@@ -3,9 +3,10 @@
 <div align="center">
   <a href="http://dlvc-lab.net/lianwen/"> <img alt="SCUT DLVC Lab" src="https://img.shields.io/badge/SCUT-DLVC_Lab-A85882?logo=Academia&logoColor=hsl"></a>
   <a href="https://link.springer.com/article/10.1007/s11263-025-02353-2"> <img alt="Static Badge" src="https://img.shields.io/badge/IJCV-LGGPT-%23327FE6?logo=Springer&logoColor=rgb&labelColor=58B822"></a>
-  <img alt="Static Badge" src="https://img.shields.io/badge/Pytorch%202.3-orange?logo=pytorch&logoColor=rgb">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Pytorch%202.0-orange?logo=pytorch&logoColor=rgb">
   <img alt="Static Badge" src="https://img.shields.io/badge/Python%203.8-lightgray?logo=python&logoColor=rgb">
 <p></p>
+
 
 <a href="https://link.springer.com/article/10.1007/s11263-025-02353-2"> <b>Smaller But Better: Unifying Layout Generation with Smaller Large Language Models</b> </a>
 
@@ -18,7 +19,7 @@
 
 LGGPT is an LLM-based model that unifies arbitrary tasks and multiple domains of layout generation. It is developed based on GPT2-XL (1.5B parameters), which proves that LLM of such a small scale can achieve competitive layout generation performance across various tasks and multiple layout domains.
 
-![DOLPHIN’s architecture](asset/arch.png)
+![LGGPT’s architecture](asset/arch.png)
 
 <div align="center"><i>The framework of LGGPT</i></div>
 
