@@ -1,0 +1,26 @@
+{
+    "train_batch_size": "auto",
+    "train_micro_batch_size_per_gpu" :"auto",
+    "gradient_accumulation_steps": "auto",
+    "gradient_clipping": 1.0,
+    "bf16": {
+        "enabled": "auto"
+    },
+    "zero_optimization": {
+        "stage": 2,
+        "allgather_partitions": true,
+        "allgather_bucket_size": 2e8,
+        "reduce_scatter": true,
+        "reduce_bucket_size": 2e8,
+        "overlap_comm": true,
+        "contiguous_gradients": true
+     },
+    "flops_profiler": {
+        "enabled": false,
+        "profile_step": 1,
+        "module_depth": -1,
+        "top_modules": 1,
+        "detailed": true,
+        "output_file": null
+    }
+}
