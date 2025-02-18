@@ -53,14 +53,14 @@ os.makedirs(opt.output,exist_ok=True)
 data_config = {
     'publaynet':{
         'data_path':'./data/publaynet/val_prompt.txt',
-        'max_token_len':320
+        'max_token_len':500
     },
     'rico':{
-        'data_path':'./data/rico/test_prompt.txt',
+        'data_path':'./data/publaynet/test_prompt.txt',
         'max_token_len':500
     },
     'magazine':{
-        'data_path':'./data/magazine/test_prompt.txt',
+        'data_path':'./data/publaynet/test_prompt.txt',
         'max_token_len':500
     }
 }
@@ -69,28 +69,28 @@ fid_config = {
     'publaynet': {
         'max_token_len':320,
         'max_element_num':30,
-        'fid_weight_path':'pretrained/fid_weights/FIDNetV3/publaynet-max25/model_best.pth.tar',
+        'fid_weight_path':'pretrained/publaynet-max25/model_best.pth.tar',
         'num_classes':5,
         'num_positions':25,
     },
     'rico': {
         'max_token_len':500,
         'max_element_num':50,
-        'fid_weight_path':'pretrained/fid_weights/FIDNetV3/rico25-max25/model_best.pth.tar',
+        'fid_weight_path':'pretrained/rico25-max25/model_best.pth.tar',
         'num_classes':25,
         'num_positions':25,
     },
     'magazine': {
         'max_token_len':320,
         'max_element_num':30,
-        'fid_weight_path':'pretrained/fid_weights/FIDNetV3/magazine-max50/magazine.pth.tar',
+        'fid_weight_path':'pretrained/magazine-max50/magazine.pth.tar',
         'num_classes':5,
         'num_positions':50,
     },
     'slide': {
         'max_token_len':320,
         'max_element_num':30,
-        'fid_weight_path':'pretrained/fid_weights/FIDNetV3/slide-max25/model_best.pth',
+        'fid_weight_path':'pretrained/slide-max25/model_best.pth',
         'num_classes':24,
         'num_positions':25,
     },
