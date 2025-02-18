@@ -42,7 +42,6 @@ opt.seed = settings['seed']
 opt.name = settings['name']
 opt.notes = settings['notes']
 opt.log_root = settings['log_root']
-# opt.gpu = settings['gpu']
 
 np.random.seed(opt.seed)
 torch.manual_seed(opt.seed)
