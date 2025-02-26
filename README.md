@@ -1,4 +1,4 @@
-# <div align="center">:sailboat:LGGPT
+# <div align="center">:stars:LGGPT
 
 <div align="center">
   <a href="http://dlvc-lab.net/lianwen/"> <img alt="SCUT DLVC Lab" src="https://img.shields.io/badge/SCUT-DLVC_Lab-A85882?logo=Academia&logoColor=hsl"></a>
@@ -93,7 +93,11 @@ We also provide a well-processed training data used in the training of the paper
 Before training, download the model's pretrained weights from :hugs:[HuggingFace](https://huggingface.co/) (*e.g.*, [GPT2-XL](https://huggingface.co/openai-community/gpt2-xl)) and place it at the local folder (*e.g.*, `gpt2-xl`). Specify the path to this folder in the config file. (*e.g.*, `config/gpt2.yaml`).
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 train.py --dataset 'unified' --notes 'training for unified data' --name 'LGGPT' --config 'config/gpt2.yaml'
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 train.py \
+  --dataset 'unified' \
+  --notes 'training for unified data' \
+  --name 'LGGPT' \
+  --config 'config/gpt2.yaml'
 ```
 
 One can specify the running devices using `CUDA_VISIBLE_DEVICES` and adjust the number of GPU devices with `nproc_per_node` accordingly.
@@ -101,7 +105,12 @@ One can specify the running devices using `CUDA_VISIBLE_DEVICES` and adjust the 
 ## <div align="center">:clinking_glasses:Test​​</div>
 
 ```bash
-python test.py --weights weights/gpt2unify-20250218-121251/checkpoint-23000/pytorch_model.bin --dataset publaynet --cond C --temp 1.0 --gpu 1
+python test.py \
+  --weights weights/gpt2unify-20250218-121251/checkpoint-23000/pytorch_model.bin \
+  --dataset publaynet \
+  --cond C \
+  --temp 1.0 \
+  --gpu 1
 ```
 
 The model is trained with unified data across various tasks and multiple domains, while it is is evaluated independently for each task and dataset. The of parameters for testing are as follows:
@@ -120,7 +129,7 @@ python test.py --weights weights/LGGPT-20250218-121251/checkpoint-23000/pytorch_
 
 The `rmp` parameter specifies the path to the previous evaluation results that are automatically stored.
 
-## <div align="center">:palm_tree:Citation</div>
+## <div align="center">:clipboard:Citation</div>
 
 ```
 @article{lggpt2025zhang,
@@ -132,7 +141,7 @@ The `rmp` parameter specifies the path to the previous evaluation results that a
 }
 ```
 
-## <div align="center">:phone:Cotact</div>
+## <div align="center">:pager:Cotact</div>
 
 Peirong Zhang: eeprzhang@mail.scut.edu.cn
 
