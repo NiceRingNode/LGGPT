@@ -3,7 +3,7 @@
 <div align="center">
   <a href="http://dlvc-lab.net/lianwen/"> <img alt="SCUT DLVC Lab" src="https://img.shields.io/badge/SCUT-DLVC_Lab-A85882?logo=Academia&logoColor=hsl"></a>
   <a href="https://link.springer.com/article/10.1007/s11263-025-02353-2"> <img alt="Static Badge" src="https://img.shields.io/badge/IJCV-LGGPT-%23327FE6?logo=Springer&logoColor=rgb&labelColor=58B822"></a>
-  <a href="https://arxiv.org/abs/2502.14005"> <img alt="Static Badge" src="https://img.shields.io/badge/arXiv-2502.14005-gray?logo=arXiv&logoColor=rgb&labelColor=%23CE0000"></a>
+  <a href="https://arxiv.org/abs/2502.14005"> <img alt="Static Badge" src="https://img.shields.io/badge/arXiv-2502.14005-%23CE0000?logo=arXiv&logoColor=rgb&labelColor=gray"></a>
   <a href="./LICENSE"> <img alt="Static Badge" src="https://img.shields.io/badge/License-GPLv3-FFBF00?logo=GNUBash&logoColor=rgb&labelColor=006622"></a>
 <p></p>
 
