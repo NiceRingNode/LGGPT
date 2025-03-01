@@ -130,7 +130,7 @@ The `rmp` parameter specifies the path to the previous evaluation results that a
 
 ## <div align="center">:clipboard:Citation</div>
 
-```
+```bibtex
 @article{lggpt2025zhang,
   title={{Smaller But Better: Unifying Layout Generation with Smaller Large Language Models}},
   author={Zhang, Peirong and Zhang, Jiaxin and Cao, Jiahuan and Li, Hongliang and Jin, Lianwen},
