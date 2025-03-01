@@ -123,7 +123,13 @@ The model is trained with unified data across various tasks and multiple domains
 If the testing was interrupted, one can resume it through:
 
 ```bash
-python test.py --weights weights/LGGPT-20250218-121251/checkpoint-23000/pytorch_model.bin --dataset publaynet --cond C --temp 1.0 --gpu 1 --rmp weights/LGGPT-20250218-121251/checkpoint-23000/C-sample59-metrics.pth
+python test.py \
+  --weights weights/LGGPT-20250218-121251/checkpoint-23000/pytorch_model.bin \
+  --dataset publaynet \
+  --cond C \
+  --temp 1.0 \
+  --gpu 1 \
+  --rmp weights/LGGPT-20250218-121251/checkpoint-23000/C-sample59-metrics.pth
 ```
 
 The `rmp` parameter specifies the path to the previous evaluation results that are automatically stored.
