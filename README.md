@@ -27,6 +27,7 @@ LGGPT is an LLM-based model that unifies arbitrary tasks and multiple domains of
 
 ```bash
 git clone https://github.com/NiceRingNode/LGGPT.git
+cd LGGPT
 conda create -n lggpt python=3.8.16
 conda activate lggpt
 pip install -r requirements.txt
