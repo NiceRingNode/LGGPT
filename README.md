@@ -141,7 +141,8 @@ The `rmp` parameter specifies the path to the previous evaluation results that a
   title={{Smaller But Better: Unifying Layout Generation with Smaller Large Language Models}},
   author={Zhang, Peirong and Zhang, Jiaxin and Cao, Jiahuan and Li, Hongliang and Jin, Lianwen},
   journal={International Journal of Computer Vision (IJCV)},
-  pages={1--27},
+  volume={133},
+  pages={3891–3917},
   year={2025}
 }
 ```
