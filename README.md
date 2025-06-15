@@ -89,8 +89,22 @@ We also provide a well-processed training data used in the training of the paper
 
 ## <div align="center">:rocket:Train</div>
 
-Before training, download the model's pretrained weights from :hugs:[HuggingFace](https://huggingface.co/) (*e.g.*, [GPT2-XL](https://huggingface.co/openai-community/gpt2-xl)) and place it at the local folder (*e.g.*, `gpt2-xl`). Specify the path to this folder in the config file. (*e.g.*, `config/gpt2.yaml`).
+Before training, please complete the following two preparation steps:
 
+First, download the model's pretrained weights from :hugs:[HuggingFace](https://huggingface.co/) (*e.g.*, [GPT2-XL](https://huggingface.co/openai-community/gpt2-xl)) and place it at the local folder (*e.g.*, `gpt2-xl`). Specify the path to this folder in the config file. (*e.g.*, `config/gpt2.yaml`).
+
+Second, modify the `GPT2LMHeadModel` implementation in the `transformers` library. Locate the source code file under the path `/your/path/to/miniconda3/envs/lggpt/lib/python3.8/site-packages/transformers/models/gpt2/modeling_gpt2.py`, change
+```python
+shift_logits = lm_logits[..., :, :-1].contiguous()
+shift_labels = labels[..., 1:].contiguous()
+```
+to
+```python
+shift_logits = lm_logits[..., :, :].contiguous()
+shift_labels = labels[..., :].contiguous()
+```
+
+Then you are free to run the training code as:
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 train.py \
   --dataset 'unified' \
